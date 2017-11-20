@@ -5,9 +5,12 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-import logo from "./Octocat.jpg"
+const logo = require("./Octocat.jpg")
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div>
+    Hello {props.name}!
+    <img src={logo} />
+  </div>
 )
 
 document.addEventListener('DOMContentLoaded', () => {
